@@ -11,7 +11,7 @@ FROM dockerfile/ubuntu
 RUN apt-get install -y python python-dev python-pip python-virtualenv
 
 # Install pandoc
-RUN apt-get install pandoc pandoc-citeproc
+RUN apt-get install -y pandoc pandoc-citeproc
 
 # Define mountable directories.
 VOLUME ["/data"]
